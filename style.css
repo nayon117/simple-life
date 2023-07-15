@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+header{
+    background-color: #F8F8F8;
+    padding: 2em 0;
+}
+/*
+  ============
+ Typography 
+  ============
+ */
+h1{
+    font-size: 3.375rem;
+     
+}
+.subtitle{
+    font-size: .75 rem;
+     color: #1792d2;
+     /* padding: .5em; */
+     font-weight: 700;
+}
+
+/* ================ 
+Nav styling
+================= */
+.container{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+.container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list-item{
+    list-style: none;
+    margin-left: 2em;
+}
+.nav-link{
+    text-decoration: none;
+    color: #707070;
+    padding: .25em 0;
+    font-weight: 700;
+}
+.nav-link:hover, .nav-link:focus{
+    color: tomato;
+}
+.current-page{
+    text-decoration: underline;
+}
+@media screen and (max-width:576px) {
+    .container-nav{
+        flex-direction: column;
+    }
+    header{
+        text-align: center;
+    }
+    .nav-list{
+        flex-direction: column;
+       margin: .5em 0;
+    }
+}
